@@ -12,19 +12,31 @@
 </head>
 <body>
 	<div class="container">
-		<h2>The Resettlement Service</h2>
-		<div class="address" id="address">
-			<h4>Your new home is located at:</h4>
-			<p>{{message}}</p>
+		<header>
+			<h2>The Resettlement Service</h2>
+		</header>
+		<div class="main">
+			<div class="address" id="address">
+				<h3>Your new home is located at:</h3>
+				<p>{{message}}</p>
+			</div>
+			<div class="support" id="support">
+				<img class="personal-photo" alt="personal photo" v-bind:src="source">
+				<p>{{message}}</p>
+			</div>
+			<div class="btn-container">
+				<button class="btn">Reply to</button>
+				<button class="btn">Show jobs near me</button>
+			</div>
 		</div>
-		<div class="support" id="support">
-			<img class="personal-photo" alt="personal photo" v-bind:src="source">
-			<p>{{message}}</p>
-		</div>
+		<footer>
+			<div class="footerLogos">
+				<img class="logo" src="./images/refsay_logo.png" alt="Refugee say logo">
+				<img class="logo" src="./images/ml_logo.png" alt="MIT media logo">
+				<img class="logo" src="./images/oxford_logo.png" alt="Oxford logo">
+			</div>
+		</footer>
 	</div>
-	<footer>
-		<img src="./images/logo.png" alt="Refugee say photo">
-	</footer>
 	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>

@@ -1,43 +1,105 @@
-@import url('https://fonts.googleapis.com/css?family=Vidaloka');
-
 * {
-  font-family: 'Vidaloka', serif;
   box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", "sans-serif";
+  font-weight: 300;
+  background-color: #eeefef;
+  margin: 0px;
+  padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", "serif";
+  font-weight: 400;
+}
+
+h2 {
   text-align: center;
-  padding: 10px;
-  width: 100%;
 }
 
 .container {
   display: flex;
-  min-height: 62vh;
-  flex-direction: column;
+  flex-flow: column;
+  min-height: 100vh;
+  background-image: url(./images/bg_photo.jpg);
+  background-size: cover;
 }
 
-footer {
-  font-size: 10px;
-  display: inline-block;
+header {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 60px;
+  background-color: #336699;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.address, .support {
+  border: solid #8bd4da 1px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
 }
 
 .personal-photo {
-  width:100px;
-  height:100px;
   float: right;
+  width: 120px;
+  height: auto;
+  border-radius: 5px;
 }
 
-footer>img {
-  width:50px;
-  height:50px;
+footer {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerLogos {
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 25%;
+  height: auto;
   display: inline-block;
 }
 
-h4, p {
-  text-align: left;
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@media screen and (min-width: 400px) {
-  .container {
-    width: 50%;
-    margin: auto;
-  }
+.btn {
+  width: 120px;
+  height: 70px;
+  margin: 10px auto;
+  padding: 15px 10px;
+  background-color: #8bd4da;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
 }
