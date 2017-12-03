@@ -2,6 +2,8 @@
 
 > Refugees-Say information page 
 
+> https://refugees-say.github.io/information_page/
+
 ## Build Setup
 
 ``` bash
