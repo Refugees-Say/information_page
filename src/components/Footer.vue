@@ -1,11 +1,11 @@
 <template>
-  <footer>
+  <div class="footer">
     <div class="footerLogos">
       <img class="logo" src="../assets/refsay_logo.png" alt="Refugee say logo">
       <img class="logo" src="../assets/ml_logo.png" alt="MIT media logo">
       <img class="logo" src="../assets/oxford_logo.png" alt="Oxford logo">
     </div>
-  </footer>
+  </div>
 </template>
 
 <script>
@@ -16,7 +16,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-footer {
+.footer {
   display: flex;
   flex-grow: 0;
   flex-shrink: 1;

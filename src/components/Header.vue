@@ -1,7 +1,7 @@
 <template>
-  <header>
+  <div class="header">
     <h2>The Resettlement Service</h2>
-  </header>
+  </div>
 </template>
 
 <script>
@@ -12,7 +12,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-header {
+.header {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: 60px;
