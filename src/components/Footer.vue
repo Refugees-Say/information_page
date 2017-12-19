@@ -15,7 +15,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 .footer {
   display: flex;
   flex-grow: 0;
@@ -23,18 +23,16 @@ export default {
   flex-basis: 200px;
   align-items: center;
   justify-content: center;
-}
-
-.footerLogos {
-  max-width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo {
-  width: 25%;
-  height: auto;
-  display: inline-block;
+  .footerLogos {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      width: 25%;
+      height: auto;
+      display: inline-block;
+    }
+  }
 }
 </style>
